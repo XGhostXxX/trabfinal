@@ -9,6 +9,8 @@ from sklearn.model_selection import train_test_split
 from keras.models import Sequential
 from keras.layers import Embedding, Flatten, Dense
 
+# https://github.com/XGhostXxX/trabfinal/blob/main/tweet_emotions.csv
+
 url = "https://raw.githubusercontent.com/ataislucky/Data-Science/main/dataset/emotion_train.txt"
 data = pd.read_csv(url, sep=';')
 data.columns = ["Text", "Emotions"]
